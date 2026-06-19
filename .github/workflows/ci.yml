@@ -1,0 +1,29 @@
+# CI — roda a suíte de testes (pytest) a cada push e pull request.
+# Gratuito para repositórios públicos. Não chama Vertex AI/BigQuery:
+# exercita apenas a lógica determinística (não consome créditos do GCP).
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências de teste
+        # Só o necessário para os testes locais (sem SDKs pesados de nuvem).
+        run: pip install pytest
+
+      - name: Rodar testes
+        run: python -m pytest

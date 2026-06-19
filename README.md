@@ -1,5 +1,7 @@
 # gcp-vertex-ai-lab 🌩️
 
+[![CI](https://github.com/leonardodebs/gcp-vertex-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/leonardodebs/gcp-vertex-ai/actions/workflows/ci.yml)
+
 Projeto de portfólio demonstrando **expertise multicloud em IA**: replica os meus
 projetos de **AWS Bedrock** (Fases 1 e 2) na **Google Cloud Vertex AI**, comparando
 as duas plataformas com as mesmas métricas — latência, custo, qualidade e
