@@ -1,0 +1,501 @@
+text,label
+Serviço de notificações fora do ar em produção,CRITICAL
+Fila SQS de catálogo com 4 mil mensagens acumuladas,HIGH
+Job de limpeza de cache executado normalmente,LOW
+Rotação de logs concluída em prod-cache-01,LOW
+Disco 100% cheio em / no host prod-lb-01,CRITICAL
+Endpoint de saúde retornando 503 em prod-web-02,CRITICAL
+Disco 71% em /tmp no host staging-web-01,MEDIUM
+Cluster Kubernetes perdeu o nó master prod-web-02,CRITICAL
+Tarefa agendada de autenticação executada no horário,LOW
+"Latência do banco prod-lb-01 acima de 10s, timeouts em massa",CRITICAL
+Snapshot do EBS de staging-db-01 com mais de 15 dias,MEDIUM
+Certificado SSL de produção expirou hoje,CRITICAL
+Certificado SSL renovado automaticamente,LOW
+Sincronização de dados concluída sem divergências,LOW
+Latência do ALB acima de 3000ms no serviço de checkout,HIGH
+Uso de IOPS do EBS de prod-api-01 no limite,HIGH
+Sincronização de dados concluída sem divergências,LOW
+3 pods reiniciaram em staging nas últimas horas,MEDIUM
+Auto Scaling falhou ao adicionar 6 instâncias,HIGH
+Throttling do DynamoDB na tabela de pagamentos,HIGH
+Política de retenção de logs não definida para autenticação,MEDIUM
+Perda de pacotes 40% na rede do host prod-web-02,CRITICAL
+Política de retenção de logs não definida para checkout,MEDIUM
+"Memória 98% utilizada em prod-web-02, OOM iminente",CRITICAL
+Fila SQS de catálogo sem dead-letter queue,MEDIUM
+8 instâncias ECS pendentes sem subir,HIGH
+Deploy do serviço de checkout realizado com sucesso,LOW
+Taxa de erro 5xx em 63% das requisições em prod-db-02,HIGH
+Serviço de catálogo fora do ar em produção,CRITICAL
+Certificado SSL expira em 30 dias,MEDIUM
+Volume EBS de prod-worker-03 em estado failed,CRITICAL
+Sincronização de dados concluída sem divergências,LOW
+Uso de IOPS do EBS de prod-api-01 no limite,HIGH
+Throttling do DynamoDB na tabela de notificações,HIGH
+Certificado SSL renovado automaticamente,LOW
+Auto Scaling falhou ao adicionar 3 instâncias,HIGH
+Auto Scaling adicionou 3 instâncias conforme esperado,LOW
+Falha total no balanceador de carga prod-lb-01,CRITICAL
+Erro 5xx acima de 50% das requisições em prod-lb-01,CRITICAL
+Cache hit ratio caiu para 75% em prod-cache-01,HIGH
+Atualização de pacotes aplicada em staging-db-01,LOW
+Bucket S3 de pagamentos sem versionamento habilitado,MEDIUM
+Job de limpeza de cache executado normalmente,LOW
+Auto Scaling adicionou 5 instâncias conforme esperado,LOW
+Endpoint de saúde retornando 503 em prod-api-01,CRITICAL
+Cluster Kubernetes perdeu o nó master prod-api-01,CRITICAL
+Uso de CPU oscilando em staging-api-01,MEDIUM
+Rotação de logs concluída em prod-api-01,LOW
+Tempo de resposta da API pagamentos degradado (1500ms),HIGH
+Certificado SSL expira em 45 dias,MEDIUM
+Health check intermitente em prod-db-02,HIGH
+Health check do serviço de checkout OK,LOW
+Endpoint de saúde retornando 503 em prod-lb-01,CRITICAL
+Novo nó adicionado ao cluster com sucesso,LOW
+Replicação do banco prod-api-01 parada há 30 minutos,CRITICAL
+Uso de IOPS do EBS de prod-worker-03 no limite,HIGH
+Auto Scaling falhou ao adicionar 7 instâncias,HIGH
+Replicação do banco prod-web-01 parada há 30 minutos,CRITICAL
+CPU 80% por 10 minutos em prod-web-01,HIGH
+Grupo de segurança com porta 22 aberta em staging-db-01,MEDIUM
+Deploy do serviço de checkout realizado com sucesso,LOW
+Rotação de logs concluída em prod-db-01,LOW
+Instância prod-db-01 iniciada com sucesso,LOW
+Falha total no balanceador de carga prod-lb-01,CRITICAL
+Job de limpeza de cache executado normalmente,LOW
+Lambda de checkout com 84% de erros nas invocações,HIGH
+Snapshot do EBS de dev-web-02 com mais de 15 dias,MEDIUM
+Rotação de logs concluída em prod-worker-03,LOW
+Pipeline de CI/CD finalizado com sucesso,LOW
+Cluster Kubernetes perdeu o nó master prod-web-02,CRITICAL
+Snapshot do EBS de staging-web-01 com mais de 7 dias,MEDIUM
+Rotação de logs concluída em prod-db-01,LOW
+Rotação de logs concluída em prod-api-01,LOW
+Taxa de erro 5xx em 62% das requisições em prod-db-02,HIGH
+Volume EBS de prod-worker-03 em estado failed,CRITICAL
+Backup do banco prod-web-02 concluído sem erros,LOW
+Banco de dados prod-db-01 sem conexões disponíveis (pool esgotado),CRITICAL
+3 pods reiniciaram em staging nas últimas horas,MEDIUM
+Disco 100% cheio em / no host prod-web-02,CRITICAL
+Atualização de pacotes aplicada em staging-api-01,LOW
+Lambda de notificações com 89% de erros nas invocações,HIGH
+Atualização de pacotes aplicada em staging-web-01,LOW
+Tempo de resposta da API notificações degradado (3000ms),HIGH
+Bucket S3 de checkout sem versionamento habilitado,MEDIUM
+Certificado SSL renovado automaticamente,LOW
+Certificado SSL renovado automaticamente,LOW
+Cluster Kubernetes perdeu o nó master prod-lb-01,CRITICAL
+Erro 5xx acima de 50% das requisições em prod-api-01,CRITICAL
+Backup do banco prod-cache-01 concluído sem erros,LOW
+Memória 80% utilizada em prod-lb-01,HIGH
+Latência do ALB acima de 2000ms no serviço de notificações,HIGH
+Tempo de resposta da API pagamentos degradado (2000ms),HIGH
+Fila SQS de catálogo sem dead-letter queue,MEDIUM
+Falha total no balanceador de carga prod-lb-01,CRITICAL
+Snapshot do EBS de staging-web-01 com mais de 7 dias,MEDIUM
+Cache hit ratio caiu para 69% em prod-cache-01,HIGH
+Conexões de banco prod-web-02 próximas do limite (85%),HIGH
+Novo nó adicionado ao cluster com sucesso,LOW
+Pipeline de CI/CD finalizado com sucesso,LOW
+Certificado SSL de produção expirou hoje,CRITICAL
+Grupo de segurança com porta 22 aberta em staging-api-01,MEDIUM
+"Latência do banco prod-worker-03 acima de 10s, timeouts em massa",CRITICAL
+Grupo de segurança com porta 22 aberta em staging-api-01,MEDIUM
+Deploy do serviço de notificações realizado com sucesso,LOW
+Uso de IOPS do EBS de prod-db-01 no limite,HIGH
+"Latência do banco prod-db-02 acima de 10s, timeouts em massa",CRITICAL
+Cobertura de monitoramento parcial no serviço de notificações,MEDIUM
+Fila SQS de autenticação sem dead-letter queue,MEDIUM
+Versão de runtime da Lambda pagamentos desatualizada,MEDIUM
+Falha total no balanceador de carga prod-lb-01,CRITICAL
+5 instâncias ECS pendentes sem subir,HIGH
+Conexões de banco prod-db-01 próximas do limite (80%),HIGH
+Bucket S3 de autenticação sem versionamento habilitado,MEDIUM
+Instância prod-cache-01 iniciada com sucesso,LOW
+CPU 60% em staging-web-01 (ambiente de staging),MEDIUM
+Política de retenção de logs não definida para catálogo,MEDIUM
+Volume EBS de prod-cache-01 em estado failed,CRITICAL
+Perda de pacotes 40% na rede do host prod-db-01,CRITICAL
+Certificado SSL de produção expirou hoje,CRITICAL
+CPU 62% em staging-api-01 (ambiente de staging),MEDIUM
+Disco 100% cheio em / no host prod-db-02,CRITICAL
+Falha total no balanceador de carga prod-lb-01,CRITICAL
+Disco 100% cheio em / no host prod-web-02,CRITICAL
+Cluster Kubernetes perdeu o nó master prod-cache-01,CRITICAL
+Fila SQS de checkout sem dead-letter queue,MEDIUM
+Taxa de erro 5xx em 68% das requisições em prod-worker-03,HIGH
+3 instâncias ECS pendentes sem subir,HIGH
+Certificado SSL expira em 15 dias,MEDIUM
+Certificado SSL expira em 15 dias,MEDIUM
+Volume EBS de prod-worker-03 em estado failed,CRITICAL
+Erro 5xx acima de 50% das requisições em prod-lb-01,CRITICAL
+Lambda de notificações com 83% de erros nas invocações,HIGH
+Certificado SSL expira em 30 dias,MEDIUM
+Memória 83% utilizada em prod-worker-03,HIGH
+Cache hit ratio caiu para 75% em prod-cache-01,HIGH
+Memória 85% utilizada em prod-worker-03,HIGH
+Tempo de resposta da API catálogo degradado (1500ms),HIGH
+Uso de CPU oscilando em staging-db-01,MEDIUM
+Latência do ALB acima de 3000ms no serviço de pagamentos,HIGH
+Rotação de logs concluída em prod-lb-01,LOW
+Uso de CPU oscilando em dev-web-02,MEDIUM
+Lambda de catálogo com 82% de erros nas invocações,HIGH
+Fila SQS de autenticação sem dead-letter queue,MEDIUM
+Instância RDS prod-api-01 caiu e não responde,CRITICAL
+Métrica de memória sem alarme configurado em staging-api-01,MEDIUM
+Memória 84% utilizada em prod-api-01,HIGH
+Auto Scaling adicionou 5 instâncias conforme esperado,LOW
+"Latência do banco prod-web-01 acima de 10s, timeouts em massa",CRITICAL
+Cluster Kubernetes perdeu o nó master prod-worker-03,CRITICAL
+Tempo de resposta da API checkout degradado (2000ms),HIGH
+"Memória 98% utilizada em prod-lb-01, OOM iminente",CRITICAL
+Fila SQS de catálogo com 4 mil mensagens acumuladas,HIGH
+Backup do banco prod-lb-01 concluído sem erros,LOW
+Disco 100% cheio em / no host prod-worker-03,CRITICAL
+Endpoint de saúde retornando 503 em prod-db-01,CRITICAL
+Novo nó adicionado ao cluster com sucesso,LOW
+Disco 100% cheio em / no host prod-db-01,CRITICAL
+Serviço de pagamentos fora do ar em produção,CRITICAL
+Replicação do banco prod-db-02 parada há 30 minutos,CRITICAL
+Throttling do DynamoDB na tabela de autenticação,HIGH
+Métrica de latência dentro do esperado em checkout,LOW
+Métrica de memória sem alarme configurado em dev-web-02,MEDIUM
+Erro 5xx acima de 50% das requisições em prod-db-02,CRITICAL
+Certificado SSL renovado automaticamente,LOW
+Cluster Kubernetes perdeu o nó master prod-cache-01,CRITICAL
+Health check intermitente em prod-web-01,HIGH
+4 instâncias ECS pendentes sem subir,HIGH
+Health check intermitente em prod-cache-01,HIGH
+Métrica de memória sem alarme configurado em dev-web-02,MEDIUM
+Snapshot do EBS de dev-web-02 com mais de 30 dias,MEDIUM
+Backup do banco dev-web-02 levou mais tempo que o normal,MEDIUM
+Métrica de latência dentro do esperado em checkout,LOW
+Cluster Kubernetes perdeu o nó master prod-web-02,CRITICAL
+Disco 80% em /var no host prod-lb-01,HIGH
+Política de retenção de logs não definida para pagamentos,MEDIUM
+5 pods reiniciaram em staging nas últimas horas,MEDIUM
+Pipeline de CI/CD finalizado com sucesso,LOW
+Instância prod-worker-03 iniciada com sucesso,LOW
+Fila SQS de pagamentos sem dead-letter queue,MEDIUM
+Instância RDS prod-web-01 caiu e não responde,CRITICAL
+Cache hit ratio caiu para 71% em prod-cache-01,HIGH
+Lambda de notificações com 80% de erros nas invocações,HIGH
+Conexões de banco prod-web-01 próximas do limite (85%),HIGH
+Replicação do banco prod-worker-03 parada há 30 minutos,CRITICAL
+Serviço de checkout fora do ar em produção,CRITICAL
+Tag de custo ausente em 3 recursos EC2,MEDIUM
+Tarefa agendada de checkout executada no horário,LOW
+Serviço de pagamentos fora do ar em produção,CRITICAL
+Métrica de memória sem alarme configurado em dev-web-02,MEDIUM
+Certificado SSL expira em 30 dias,MEDIUM
+Métrica de latência dentro do esperado em autenticação,LOW
+Snapshot do EBS de prod-cache-01 criado com sucesso,LOW
+Uso de CPU oscilando em staging-web-01,MEDIUM
+Volume EBS de prod-web-02 em estado failed,CRITICAL
+Endpoint de saúde retornando 503 em prod-worker-03,CRITICAL
+Lambda de checkout com 82% de erros nas invocações,HIGH
+Banco de dados prod-api-01 sem conexões disponíveis (pool esgotado),CRITICAL
+Sincronização de dados concluída sem divergências,LOW
+Pipeline de CI/CD finalizado com sucesso,LOW
+Backup do banco staging-web-01 levou mais tempo que o normal,MEDIUM
+3 instâncias ECS pendentes sem subir,HIGH
+Certificado SSL expira em 7 dias,MEDIUM
+Bucket S3 de checkout sem versionamento habilitado,MEDIUM
+Replicação do banco prod-cache-01 parada há 30 minutos,CRITICAL
+Instância prod-web-02 iniciada com sucesso,LOW
+Perda de pacotes 40% na rede do host prod-web-01,CRITICAL
+Sincronização de dados concluída sem divergências,LOW
+Auto Scaling falhou ao adicionar 2 instâncias,HIGH
+Instância prod-web-01 iniciada com sucesso,LOW
+Volume EBS de prod-worker-03 em estado failed,CRITICAL
+Conexões de banco prod-cache-01 próximas do limite (88%),HIGH
+Sincronização de dados concluída sem divergências,LOW
+Snapshot do EBS de prod-web-01 criado com sucesso,LOW
+Fila SQS de checkout sem dead-letter queue,MEDIUM
+Uso de CPU oscilando em staging-web-01,MEDIUM
+Uso de CPU oscilando em staging-db-01,MEDIUM
+Job de limpeza de cache executado normalmente,LOW
+Tarefa agendada de notificações executada no horário,LOW
+Instância prod-db-01 iniciada com sucesso,LOW
+Auto Scaling falhou ao adicionar 5 instâncias,HIGH
+Snapshot do EBS de staging-api-01 com mais de 15 dias,MEDIUM
+Deploy do serviço de pagamentos realizado com sucesso,LOW
+Cache hit ratio caiu para 65% em prod-cache-01,HIGH
+Métrica de memória sem alarme configurado em staging-web-01,MEDIUM
+Certificado SSL expira em 45 dias,MEDIUM
+Backup do banco staging-db-01 levou mais tempo que o normal,MEDIUM
+Backup do banco staging-db-01 levou mais tempo que o normal,MEDIUM
+Job de limpeza de cache executado normalmente,LOW
+Certificado SSL de produção expirou hoje,CRITICAL
+Tempo de resposta da API catálogo degradado (3000ms),HIGH
+Certificado SSL renovado automaticamente,LOW
+Health check intermitente em prod-lb-01,HIGH
+Disco 73% em /tmp no host staging-db-01,MEDIUM
+Volume EBS de prod-lb-01 em estado failed,CRITICAL
+Sincronização de dados concluída sem divergências,LOW
+Throttling do DynamoDB na tabela de catálogo,HIGH
+Latência do ALB acima de 2500ms no serviço de catálogo,HIGH
+Grupo de segurança com porta 22 aberta em staging-web-01,MEDIUM
+Deploy do serviço de pagamentos realizado com sucesso,LOW
+Grupo de segurança com porta 22 aberta em dev-web-02,MEDIUM
+"Latência do banco prod-api-01 acima de 10s, timeouts em massa",CRITICAL
+Instância RDS prod-cache-01 caiu e não responde,CRITICAL
+Conexões de banco prod-worker-03 próximas do limite (83%),HIGH
+Tarefa agendada de pagamentos executada no horário,LOW
+Disco 100% cheio em / no host prod-worker-03,CRITICAL
+Instância prod-db-01 iniciada com sucesso,LOW
+Conexões de banco prod-cache-01 próximas do limite (87%),HIGH
+Sincronização de dados concluída sem divergências,LOW
+Health check intermitente em prod-worker-03,HIGH
+Pipeline de CI/CD finalizado com sucesso,LOW
+Rotação de logs concluída em prod-cache-01,LOW
+"Memória 98% utilizada em prod-api-01, OOM iminente",CRITICAL
+Política de retenção de logs não definida para pagamentos,MEDIUM
+"Latência do banco prod-db-01 acima de 10s, timeouts em massa",CRITICAL
+Job de limpeza de cache executado normalmente,LOW
+Bucket S3 de notificações sem versionamento habilitado,MEDIUM
+Snapshot do EBS de staging-web-01 com mais de 45 dias,MEDIUM
+Cluster Kubernetes perdeu o nó master prod-api-01,CRITICAL
+CPU 96% em prod-worker-03 há mais de 5 minutos,CRITICAL
+Certificado SSL renovado automaticamente,LOW
+Erro 5xx acima de 50% das requisições em prod-lb-01,CRITICAL
+Tag de custo ausente em 8 recursos EC2,MEDIUM
+Uso de IOPS do EBS de prod-cache-01 no limite,HIGH
+Job de limpeza de cache executado normalmente,LOW
+Instância prod-web-01 iniciada com sucesso,LOW
+Cache hit ratio caiu para 71% em prod-cache-01,HIGH
+Health check intermitente em prod-db-01,HIGH
+CPU 91% em prod-db-01 há mais de 5 minutos,CRITICAL
+Auto Scaling falhou ao adicionar 8 instâncias,HIGH
+Health check intermitente em prod-web-02,HIGH
+Fila SQS de catálogo sem dead-letter queue,MEDIUM
+Throttling do DynamoDB na tabela de checkout,HIGH
+Taxa de erro 5xx em 68% das requisições em prod-db-02,HIGH
+Health check do serviço de catálogo OK,LOW
+Fila de mensagens com mais de 100 mil itens travada,CRITICAL
+Perda de pacotes 40% na rede do host prod-cache-01,CRITICAL
+Fila SQS de autenticação sem dead-letter queue,MEDIUM
+Pipeline de CI/CD finalizado com sucesso,LOW
+Tarefa agendada de catálogo executada no horário,LOW
+Conexões de banco prod-worker-03 próximas do limite (82%),HIGH
+Rotação de logs concluída em prod-cache-01,LOW
+Versão de runtime da Lambda autenticação desatualizada,MEDIUM
+4 instâncias ECS pendentes sem subir,HIGH
+Snapshot do EBS de staging-db-01 com mais de 45 dias,MEDIUM
+Throttling do DynamoDB na tabela de catálogo,HIGH
+Fila SQS de checkout com 2 mil mensagens acumuladas,HIGH
+Health check do serviço de autenticação OK,LOW
+Deploy do serviço de checkout realizado com sucesso,LOW
+Instância RDS prod-worker-03 caiu e não responde,CRITICAL
+5 pods reiniciaram em staging nas últimas horas,MEDIUM
+Disco 69% em /tmp no host staging-web-01,MEDIUM
+Pipeline de CI/CD finalizado com sucesso,LOW
+CPU 82% por 5 minutos em prod-cache-01,HIGH
+Auto Scaling adicionou 8 instâncias conforme esperado,LOW
+Banco de dados prod-worker-03 sem conexões disponíveis (pool esgotado),CRITICAL
+Auto Scaling falhou ao adicionar 4 instâncias,HIGH
+Certificado SSL renovado automaticamente,LOW
+Backup do banco prod-web-02 concluído sem erros,LOW
+Auto Scaling adicionou 4 instâncias conforme esperado,LOW
+Conexões de banco prod-api-01 próximas do limite (86%),HIGH
+Novo nó adicionado ao cluster com sucesso,LOW
+CPU 86% por 30 minutos em prod-web-01,HIGH
+CPU 92% em prod-lb-01 há mais de 5 minutos,CRITICAL
+Falha total no balanceador de carga prod-lb-01,CRITICAL
+Rotação de logs concluída em prod-worker-03,LOW
+Fila SQS de notificações sem dead-letter queue,MEDIUM
+Perda de pacotes 40% na rede do host prod-web-01,CRITICAL
+Sincronização de dados concluída sem divergências,LOW
+Sincronização de dados concluída sem divergências,LOW
+Falha total no balanceador de carga prod-lb-01,CRITICAL
+Disco 88% em /var no host prod-db-01,HIGH
+Falha total no balanceador de carga prod-lb-01,CRITICAL
+Tarefa agendada de catálogo executada no horário,LOW
+Volume EBS de prod-api-01 em estado failed,CRITICAL
+"Memória 98% utilizada em prod-db-02, OOM iminente",CRITICAL
+Versão de runtime da Lambda catálogo desatualizada,MEDIUM
+Throttling do DynamoDB na tabela de notificações,HIGH
+Grupo de segurança com porta 22 aberta em staging-web-01,MEDIUM
+Métrica de latência dentro do esperado em catálogo,LOW
+Tag de custo ausente em 6 recursos EC2,MEDIUM
+Uso de IOPS do EBS de prod-web-02 no limite,HIGH
+Health check intermitente em prod-db-02,HIGH
+Auto Scaling adicionou 2 instâncias conforme esperado,LOW
+Métrica de memória sem alarme configurado em staging-web-01,MEDIUM
+Serviço de notificações fora do ar em produção,CRITICAL
+Conexões de banco prod-cache-01 próximas do limite (88%),HIGH
+Banco de dados prod-api-01 sem conexões disponíveis (pool esgotado),CRITICAL
+Taxa de erro 5xx em 75% das requisições em prod-api-01,HIGH
+Instância prod-db-01 iniciada com sucesso,LOW
+Fila SQS de autenticação sem dead-letter queue,MEDIUM
+Deploy do serviço de catálogo realizado com sucesso,LOW
+Atualização de pacotes aplicada em staging-db-01,LOW
+Certificado SSL renovado automaticamente,LOW
+Certificado SSL renovado automaticamente,LOW
+Fila SQS de pagamentos sem dead-letter queue,MEDIUM
+Snapshot do EBS de staging-api-01 com mais de 30 dias,MEDIUM
+Cache hit ratio caiu para 69% em prod-cache-01,HIGH
+Snapshot do EBS de staging-web-01 com mais de 45 dias,MEDIUM
+Health check do serviço de pagamentos OK,LOW
+Serviço de pagamentos fora do ar em produção,CRITICAL
+Certificado SSL renovado automaticamente,LOW
+Auto Scaling adicionou 8 instâncias conforme esperado,LOW
+"Latência do banco prod-web-02 acima de 10s, timeouts em massa",CRITICAL
+Fila de mensagens com mais de 100 mil itens travada,CRITICAL
+Backup do banco prod-api-01 concluído sem erros,LOW
+Taxa de erro 5xx em 64% das requisições em prod-web-01,HIGH
+Bucket S3 de notificações sem versionamento habilitado,MEDIUM
+CPU 84% por 30 minutos em prod-db-02,HIGH
+Auto Scaling falhou ao adicionar 6 instâncias,HIGH
+Uso de IOPS do EBS de prod-lb-01 no limite,HIGH
+Fila SQS de autenticação com 5 mil mensagens acumuladas,HIGH
+7 instâncias ECS pendentes sem subir,HIGH
+Atualização de pacotes aplicada em staging-db-01,LOW
+Health check do serviço de notificações OK,LOW
+Backup do banco staging-web-01 levou mais tempo que o normal,MEDIUM
+Instância RDS prod-cache-01 caiu e não responde,CRITICAL
+Certificado SSL de produção expirou hoje,CRITICAL
+Instância prod-db-02 iniciada com sucesso,LOW
+Tag de custo ausente em 5 recursos EC2,MEDIUM
+Rotação de logs concluída em prod-db-02,LOW
+4 instâncias ECS pendentes sem subir,HIGH
+Tarefa agendada de catálogo executada no horário,LOW
+Cobertura de monitoramento parcial no serviço de pagamentos,MEDIUM
+Backup do banco prod-lb-01 concluído sem erros,LOW
+Erro 5xx acima de 50% das requisições em prod-web-01,CRITICAL
+Throttling do DynamoDB na tabela de checkout,HIGH
+Serviço de autenticação fora do ar em produção,CRITICAL
+Uso de CPU oscilando em staging-web-01,MEDIUM
+Política de retenção de logs não definida para pagamentos,MEDIUM
+CPU 64% em staging-db-01 (ambiente de staging),MEDIUM
+Conexões de banco prod-db-01 próximas do limite (85%),HIGH
+Atualização de pacotes aplicada em staging-api-01,LOW
+Falha total no balanceador de carga prod-lb-01,CRITICAL
+Instância prod-cache-01 iniciada com sucesso,LOW
+Tarefa agendada de pagamentos executada no horário,LOW
+Uso de CPU oscilando em staging-api-01,MEDIUM
+Novo nó adicionado ao cluster com sucesso,LOW
+Política de retenção de logs não definida para checkout,MEDIUM
+Endpoint de saúde retornando 503 em prod-worker-03,CRITICAL
+Fila de mensagens com mais de 100 mil itens travada,CRITICAL
+Snapshot do EBS de staging-web-01 com mais de 7 dias,MEDIUM
+Uso de IOPS do EBS de prod-lb-01 no limite,HIGH
+Health check intermitente em prod-cache-01,HIGH
+Cobertura de monitoramento parcial no serviço de autenticação,MEDIUM
+Health check intermitente em prod-db-01,HIGH
+Health check intermitente em prod-cache-01,HIGH
+Instância RDS prod-db-02 caiu e não responde,CRITICAL
+Fila SQS de autenticação sem dead-letter queue,MEDIUM
+Disco 100% cheio em / no host prod-web-02,CRITICAL
+Taxa de erro 5xx em 66% das requisições em prod-db-02,HIGH
+Disco 100% cheio em / no host prod-api-01,CRITICAL
+Tag de custo ausente em 4 recursos EC2,MEDIUM
+Health check do serviço de catálogo OK,LOW
+Cobertura de monitoramento parcial no serviço de catálogo,MEDIUM
+Versão de runtime da Lambda checkout desatualizada,MEDIUM
+Cobertura de monitoramento parcial no serviço de checkout,MEDIUM
+Disco 89% em /var no host prod-api-01,HIGH
+Tarefa agendada de notificações executada no horário,LOW
+Perda de pacotes 40% na rede do host prod-db-02,CRITICAL
+Perda de pacotes 40% na rede do host prod-lb-01,CRITICAL
+5 pods reiniciaram em staging nas últimas horas,MEDIUM
+Job de limpeza de cache executado normalmente,LOW
+Throttling do DynamoDB na tabela de notificações,HIGH
+CPU 93% em prod-lb-01 há mais de 5 minutos,CRITICAL
+Banco de dados prod-cache-01 sem conexões disponíveis (pool esgotado),CRITICAL
+Latência do ALB acima de 1500ms no serviço de notificações,HIGH
+Cobertura de monitoramento parcial no serviço de notificações,MEDIUM
+Fila de mensagens com mais de 100 mil itens travada,CRITICAL
+Sincronização de dados concluída sem divergências,LOW
+Tempo de resposta da API notificações degradado (1500ms),HIGH
+Deploy do serviço de pagamentos realizado com sucesso,LOW
+Serviço de notificações fora do ar em produção,CRITICAL
+Health check intermitente em prod-db-01,HIGH
+Sincronização de dados concluída sem divergências,LOW
+Perda de pacotes 40% na rede do host prod-web-01,CRITICAL
+Lambda de pagamentos com 83% de erros nas invocações,HIGH
+4 pods reiniciaram em staging nas últimas horas,MEDIUM
+Lambda de notificações com 88% de erros nas invocações,HIGH
+Taxa de erro 5xx em 73% das requisições em prod-web-01,HIGH
+7 pods reiniciaram em staging nas últimas horas,MEDIUM
+Auto Scaling falhou ao adicionar 5 instâncias,HIGH
+Novo nó adicionado ao cluster com sucesso,LOW
+"Latência do banco prod-api-01 acima de 10s, timeouts em massa",CRITICAL
+Tarefa agendada de notificações executada no horário,LOW
+Cache hit ratio caiu para 65% em prod-cache-01,HIGH
+Backup do banco staging-db-01 levou mais tempo que o normal,MEDIUM
+Lambda de pagamentos com 87% de erros nas invocações,HIGH
+Disco 80% em /var no host prod-cache-01,HIGH
+Bucket S3 de autenticação sem versionamento habilitado,MEDIUM
+Memória 85% utilizada em prod-lb-01,HIGH
+Banco de dados prod-api-01 sem conexões disponíveis (pool esgotado),CRITICAL
+Erro 5xx acima de 50% das requisições em prod-cache-01,CRITICAL
+Certificado SSL expira em 45 dias,MEDIUM
+Cobertura de monitoramento parcial no serviço de autenticação,MEDIUM
+Auto Scaling falhou ao adicionar 3 instâncias,HIGH
+Snapshot do EBS de staging-api-01 com mais de 45 dias,MEDIUM
+Serviço de checkout fora do ar em produção,CRITICAL
+Erro 5xx acima de 50% das requisições em prod-db-01,CRITICAL
+Certificado SSL de produção expirou hoje,CRITICAL
+Grupo de segurança com porta 22 aberta em dev-web-02,MEDIUM
+CPU 63% em staging-api-01 (ambiente de staging),MEDIUM
+Fila SQS de pagamentos com 2 mil mensagens acumuladas,HIGH
+Throttling do DynamoDB na tabela de notificações,HIGH
+"Latência do banco prod-web-01 acima de 10s, timeouts em massa",CRITICAL
+Uso de CPU oscilando em staging-api-01,MEDIUM
+Fila SQS de notificações sem dead-letter queue,MEDIUM
+Fila SQS de autenticação com 4 mil mensagens acumuladas,HIGH
+CPU 92% em prod-db-02 há mais de 5 minutos,CRITICAL
+Throttling do DynamoDB na tabela de notificações,HIGH
+Backup do banco staging-api-01 levou mais tempo que o normal,MEDIUM
+Rotação de logs concluída em prod-web-02,LOW
+Memória 81% utilizada em prod-cache-01,HIGH
+Certificado SSL renovado automaticamente,LOW
+Cluster Kubernetes perdeu o nó master prod-web-02,CRITICAL
+Rotação de logs concluída em prod-db-02,LOW
+Auto Scaling falhou ao adicionar 4 instâncias,HIGH
+Certificado SSL expira em 7 dias,MEDIUM
+Novo nó adicionado ao cluster com sucesso,LOW
+Pipeline de CI/CD finalizado com sucesso,LOW
+Health check do serviço de checkout OK,LOW
+Certificado SSL expira em 7 dias,MEDIUM
+Lambda de pagamentos com 87% de erros nas invocações,HIGH
+Serviço de catálogo fora do ar em produção,CRITICAL
+Fila de mensagens com mais de 100 mil itens travada,CRITICAL
+Certificado SSL expira em 30 dias,MEDIUM
+Conexões de banco prod-cache-01 próximas do limite (84%),HIGH
+Endpoint de saúde retornando 503 em prod-cache-01,CRITICAL
+Uso de IOPS do EBS de prod-db-01 no limite,HIGH
+Backup do banco staging-web-01 levou mais tempo que o normal,MEDIUM
+Uso de CPU oscilando em staging-web-01,MEDIUM
+Job de limpeza de cache executado normalmente,LOW
+CPU 92% em prod-web-01 há mais de 5 minutos,CRITICAL
+Disco 84% em /var no host prod-lb-01,HIGH
+Instância RDS prod-web-01 caiu e não responde,CRITICAL
+Perda de pacotes 40% na rede do host prod-web-02,CRITICAL
+Throttling do DynamoDB na tabela de autenticação,HIGH
+Erro 5xx acima de 50% das requisições em prod-lb-01,CRITICAL
+Versão de runtime da Lambda notificações desatualizada,MEDIUM
+Versão de runtime da Lambda notificações desatualizada,MEDIUM
+Certificado SSL renovado automaticamente,LOW
+Bucket S3 de checkout sem versionamento habilitado,MEDIUM
+Auto Scaling falhou ao adicionar 7 instâncias,HIGH
+Fila de mensagens com mais de 100 mil itens travada,CRITICAL
+Fila SQS de autenticação sem dead-letter queue,MEDIUM
+Versão de runtime da Lambda checkout desatualizada,MEDIUM
+Grupo de segurança com porta 22 aberta em staging-web-01,MEDIUM
+Banco de dados prod-api-01 sem conexões disponíveis (pool esgotado),CRITICAL
+Fila SQS de autenticação sem dead-letter queue,MEDIUM
+Métrica de memória sem alarme configurado em staging-api-01,MEDIUM
+Uso de IOPS do EBS de prod-web-02 no limite,HIGH
+CPU 61% em staging-web-01 (ambiente de staging),MEDIUM
+Tempo de resposta da API checkout degradado (3000ms),HIGH
+Tarefa agendada de notificações executada no horário,LOW
+Tag de custo ausente em 2 recursos EC2,MEDIUM
+Métrica de memória sem alarme configurado em staging-db-01,MEDIUM
+Serviço de checkout fora do ar em produção,CRITICAL
+Volume EBS de prod-worker-03 em estado failed,CRITICAL
+Política de retenção de logs não definida para checkout,MEDIUM
+Tarefa agendada de catálogo executada no horário,LOW
+Disco 100% cheio em / no host prod-web-02,CRITICAL

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+  Dashboard estático (Opção A) — gcp-vertex-ai-lab.
+  Lê reports/model_comparison.json em tempo de execução e renderiza as
+  comparações AWS Bedrock vs GCP Vertex AI. Sem backend: serve em GitHub Pages
+  ou via `python3 -m http.server` na raiz do projeto.
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS Bedrock ↔ GCP Vertex AI — Dashboard de Comparação</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <span class="badge">Portfólio Multicloud · IA</span>
+      <h1>AWS Bedrock <span class="arrow">↔</span> GCP Vertex AI</h1>
+      <p class="sub">
+        Mesmos projetos, duas nuvens, as mesmas métricas. Comparação honesta de
+        custo, latência, qualidade e developer experience — com destaque para a
+        <strong>capacidade única do GCP: treinar ML com SQL (BigQuery ML)</strong>.
+      </p>
+      <div class="skills" id="skills"></div>
+    </div>
+  </header>
+
+  <nav class="tabs wrap">
+    <a href="#modelos">Modelos</a>
+    <a href="#bigquery">BigQuery ML ⭐</a>
+    <a href="#custo">Custo</a>
+    <a href="#dimensoes">20 Dimensões</a>
+    <a href="#dx">Dev Experience</a>
+    <a href="#veredito">Veredito</a>
+  </nav>
+
+  <main class="wrap">
+    <!-- 1. Comparação de modelos (dados ao vivo do JSON) -->
+    <section id="modelos">
+      <h2>1. Gemini 1.5 Flash vs Claude 3 Haiku</h2>
+      <p class="muted">
+        Fonte: <code>reports/model_comparison.json</code> (gerado por
+        <code>compare_models.py</code>). <span id="modo-aviso"></span>
+      </p>
+      <div id="tabela-modelos" class="card">Carregando…</div>
+    </section>
+
+    <!-- 2. BigQuery ML — destaque -->
+    <section id="bigquery">
+      <h2>2. BigQuery ML — treinar ML com SQL <span class="star">⭐ único do GCP</span></h2>
+      <p>
+        A AWS não tem equivalente nativo (o mais próximo é o Redshift ML, que por
+        baixo provisiona o SageMaker). No GCP você treina, avalia e serve um modelo
+        <strong>sem sair do SQL</strong>:
+      </p>
+      <pre class="sql"><code>CREATE OR REPLACE MODEL alerts_dataset.severity_classifier
+OPTIONS (model_type='logistic_reg', input_label_cols=['severity'])
+AS SELECT text, severity FROM alerts_dataset.training_data;
+
+SELECT * FROM ML.EVALUATE(MODEL alerts_dataset.severity_classifier);
+SELECT * FROM ML.PREDICT(MODEL alerts_dataset.severity_classifier, ...);</code></pre>
+      <h3>Acurácia (mesmos 500 alertas do Lab 3)</h3>
+      <div id="acuracia" class="bars"></div>
+    </section>
+
+    <!-- 3. Custo -->
+    <section id="custo">
+      <h2>3. Custo do mesmo workload</h2>
+      <p class="muted">LLM rápido: 1M tokens entrada + 1M tokens saída (US$).</p>
+      <div id="custo-bars" class="bars"></div>
+      <p class="callout">
+        Gemini 1.5 Flash é <strong>~4× mais barato</strong> que Claude 3 Haiku para
+        inferência rápida. O laboratório inteiro custa <strong>&lt; US$ 0,05</strong>
+        dos US$ 300 do free trial.
+      </p>
+    </section>
+
+    <!-- 4. 20 dimensões -->
+    <section id="dimensoes">
+      <h2>4. Comparação completa — 20 dimensões</h2>
+      <div id="tabela-dim" class="card"></div>
+    </section>
+
+    <!-- 5. Developer Experience -->
+    <section id="dx">
+      <h2>5. Developer Experience (1–5)</h2>
+      <div id="dx-bars" class="bars dx"></div>
+      <p class="callout" id="dx-media"></p>
+    </section>
+
+    <!-- 6. Veredito -->
+    <section id="veredito">
+      <h2>6. Quando escolher cada nuvem</h2>
+      <div class="grid2">
+        <div class="card gcp">
+          <h3>Escolha GCP / Vertex AI</h3>
+          <ul>
+            <li>ML sobre dados que já vivem num warehouse → <strong>BigQuery ML</strong></li>
+            <li>Inferência LLM barata e rápida (Gemini Flash)</li>
+            <li>Contexto gigante (1M+) ou multimodal (áudio/vídeo)</li>
+            <li>Equipe forte em SQL/analytics, fraca em MLOps</li>
+          </ul>
+        </div>
+        <div class="card aws">
+          <h3>Continue na AWS</h3>
+          <ul>
+            <li>Claude é o modelo principal (topo em raciocínio/código)</li>
+            <li>Já há peso de workloads/identidade/rede na AWS</li>
+            <li>Precisa do catálogo mais amplo de serviços gerenciados</li>
+          </ul>
+        </div>
+      </div>
+      <p class="callout">
+        <strong>Multicloud é viável:</strong> a camada de prompts/LLM é portável;
+        o lock-in real está nos dados (BigQuery vs Redshift) e no RAG gerenciado.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>gcp-vertex-ai-lab · Engenheiro AWS/OCI expandindo para GCP ·
+        Região <code>us-central1</code> · GCP Free Trial (US$ 300)</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Vertex AI / Gemini / Embeddings
+google-cloud-aiplatform>=1.60.0
+# BigQuery + BigQuery ML (via SQL)
+google-cloud-bigquery>=3.20.0
+# Índice vetorial local para o RAG (mesma estratégia da Fase 1)
+faiss-cpu>=1.8.0
+numpy>=1.26.0
+# AWS Bedrock (Claude 3 Haiku) — comparação opcional
+boto3>=1.34.0
+anthropic>=0.34.0
+# Saída em tabela no terminal
+rich>=13.7.0
+python-dotenv>=1.0.0
+# Testes
+pytest>=8.0.0
