@@ -149,6 +149,16 @@ Lab 3 da Fase 2 (`data/alerts_dataset.csv`).
 
 ---
 
+## 📚 Documentação
+
+| Documento | Conteúdo |
+|---|---|
+| [docs/ARQUITETURA.md](docs/ARQUITETURA.md) | Detalhes técnicos: componentes, fluxos, decisões de design, contratos de dados |
+| [docs/RUNBOOK.md](docs/RUNBOOK.md) | Setup, operação do dia a dia e troubleshooting |
+| [docs/VARIAVEIS-DE-AMBIENTE.md](docs/VARIAVEIS-DE-AMBIENTE.md) | Template e referência das variáveis de configuração |
+
+---
+
 ## 📊 AWS Bedrock vs GCP Vertex AI — comparação completa (20 dimensões)
 
 | # | Dimensão | AWS Bedrock / SageMaker | GCP Vertex AI |
@@ -240,6 +250,7 @@ gcp-vertex-ai-lab/
 ├── reports/                   # saídas geradas (json + md)
 ├── web/                       # dashboard estático (Opção A, GitHub Pages)
 ├── tests/                     # pytest — lógica determinística (sem nuvem)
+├── docs/                      # arquitetura, runbook e variáveis de ambiente
 ├── requirements.txt
 ├── .env.example
 ├── Makefile
