@@ -1,24 +1,33 @@
-# gcp-vertex-ai-lab 🌩️
+<h1 align="center">☁️ GCP Vertex AI Lab — IA Multicloud na Prática</h1>
 
-[![CI](https://github.com/leonardodebs/gcp-vertex-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/leonardodebs/gcp-vertex-ai/actions/workflows/ci.yml)
-![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
-![Pytest](https://img.shields.io/badge/tests-19%20passing-0A9EDC?logo=pytest&logoColor=white)
+<p align="center">
+  <strong>AWS Bedrock ↔ GCP Vertex AI</strong> · comparação técnica honesta de custo, latência, qualidade e developer experience<br>
+  <em>Com destaque para a capacidade única do GCP: treinar modelos de ML usando apenas SQL (BigQuery ML)</em>
+</p>
 
-**Cloud & IA**
-![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?logo=googlecloud&logoColor=white)
-![Vertex AI](https://img.shields.io/badge/Vertex%20AI-4285F4?logo=googlecloud&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini%201.5%20Flash-8E75B2?logo=googlegemini&logoColor=white)
-![BigQuery ML](https://img.shields.io/badge/BigQuery%20ML-669DF6?logo=googlebigquery&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazonwebservices&logoColor=white)
-![Bedrock](https://img.shields.io/badge/Bedrock%20%2F%20Claude-FF9900?logo=awslambda&logoColor=white)
+<p align="center">
+  <a href="https://github.com/leonardodebs/gcp-vertex-ai/actions/workflows/ci.yml"><img src="https://github.com/leonardodebs/gcp-vertex-ai/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <img src="https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/tests-19%20passing-0A9EDC?logo=pytest&logoColor=white" alt="Pytest">
+</p>
 
-**Bibliotecas & Ferramentas**
-![FAISS](https://img.shields.io/badge/FAISS-005571?logo=meta&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
-![Rich](https://img.shields.io/badge/Rich-FAE742?logo=python&logoColor=black)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?logo=githubpages&logoColor=white)
-![Make](https://img.shields.io/badge/Make-6D00CC?logo=gnu&logoColor=white)
+<p align="center">
+  <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?logo=googlecloud&logoColor=white" alt="Google Cloud">
+  <img src="https://img.shields.io/badge/Vertex%20AI-4285F4?logo=googlecloud&logoColor=white" alt="Vertex AI">
+  <img src="https://img.shields.io/badge/Gemini%201.5%20Flash-8E75B2?logo=googlegemini&logoColor=white" alt="Gemini">
+  <img src="https://img.shields.io/badge/BigQuery%20ML-669DF6?logo=googlebigquery&logoColor=white" alt="BigQuery ML">
+  <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazonwebservices&logoColor=white" alt="AWS">
+  <img src="https://img.shields.io/badge/Bedrock%20%2F%20Claude-FF9900?logo=awslambda&logoColor=white" alt="Bedrock">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/FAISS-005571?logo=meta&logoColor=white" alt="FAISS">
+  <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white" alt="NumPy">
+  <img src="https://img.shields.io/badge/Rich-FAE742?logo=python&logoColor=black" alt="Rich">
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" alt="GitHub Actions">
+  <img src="https://img.shields.io/badge/GitHub%20Pages-222222?logo=githubpages&logoColor=white" alt="GitHub Pages">
+  <img src="https://img.shields.io/badge/Make-6D00CC?logo=gnu&logoColor=white" alt="Make">
+</p>
 
 Projeto de portfólio demonstrando **expertise multicloud em IA**: replica os meus
 projetos de **AWS Bedrock** (Fases 1 e 2) na **Google Cloud Vertex AI**, comparando
