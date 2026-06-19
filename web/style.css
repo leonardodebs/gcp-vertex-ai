@@ -100,10 +100,20 @@ pre.sql code { background: none; color: #79c0ff; font-size: .88rem;
 .grid2 ul { margin-left: 18px; color: var(--muted); }
 .grid2 li { margin: 6px 0; }
 
+/* Qualidade & CI */
+.ci-badge { margin: 14px 0 22px; }
+.quality-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+  margin-bottom: 8px; }
+.qcard { background: var(--panel); border: 1px solid var(--border);
+  border-radius: 10px; padding: 18px; text-align: center; }
+.qnum { font-size: 1.8rem; font-weight: 800; color: var(--gcp2); }
+.qlabel { color: var(--muted); font-size: .85rem; margin-top: 4px; }
+
 footer { padding: 28px 0; color: var(--muted); font-size: .85rem; text-align: center; }
 
 @media (max-width: 680px) {
   .hero h1 { font-size: 2rem; }
   .grid2, .bar-row, .bars.dx .bar-row { grid-template-columns: 1fr; }
   .bar-row .label { margin-bottom: -4px; }
+  .quality-grid { grid-template-columns: repeat(2, 1fr); }
 }

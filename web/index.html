@@ -33,6 +33,7 @@
     <a href="#dimensoes">20 Dimensões</a>
     <a href="#dx">Dev Experience</a>
     <a href="#veredito">Veredito</a>
+    <a href="#qualidade">Qualidade & CI</a>
   </nav>
 
   <main class="wrap">
@@ -114,6 +115,55 @@ SELECT * FROM ML.PREDICT(MODEL alerts_dataset.severity_classifier, ...);</code><
       <p class="callout">
         <strong>Multicloud é viável:</strong> a camada de prompts/LLM é portável;
         o lock-in real está nos dados (BigQuery vs Redshift) e no RAG gerenciado.
+      </p>
+    </section>
+
+    <!-- 7. Qualidade & CI -->
+    <section id="qualidade">
+      <h2>7. Qualidade &amp; CI/CD</h2>
+      <p class="muted">
+        Código testado e integração contínua via GitHub Actions (gratuito p/ repo
+        público; roda só a lógica local, sem consumir créditos de nuvem).
+      </p>
+      <p class="ci-badge">
+        <a href="https://github.com/leonardodebs/gcp-vertex-ai/actions/workflows/ci.yml" target="_blank" rel="noopener">
+          <img src="https://github.com/leonardodebs/gcp-vertex-ai/actions/workflows/ci.yml/badge.svg" alt="status do CI" />
+        </a>
+      </p>
+      <div class="quality-grid">
+        <div class="qcard">
+          <div class="qnum">19</div>
+          <div class="qlabel">testes (pytest)</div>
+        </div>
+        <div class="qcard">
+          <div class="qnum">4</div>
+          <div class="qlabel">módulos cobertos</div>
+        </div>
+        <div class="qcard">
+          <div class="qnum">~0,1s</div>
+          <div class="qlabel">suíte completa</div>
+        </div>
+        <div class="qcard">
+          <div class="qnum">a cada push</div>
+          <div class="qlabel">CI automático</div>
+        </div>
+      </div>
+      <h3>O que é testado (sem tocar a nuvem)</h3>
+      <div class="card">
+        <table>
+          <thead><tr><th>Módulo</th><th>Cobertura dos testes</th></tr></thead>
+          <tbody>
+            <tr><td><code>compare_models</code></td><td>nota de qualidade [1–5] · cálculo de custo (Haiku &gt; Flash)</td></tr>
+            <tr><td><code>vertex_rag</code></td><td>carga dos 8 runbooks · formato e tamanho dos chunks</td></tr>
+            <tr><td><code>bigquery_ml</code></td><td>templates SQL (CREATE MODEL, ML.EVALUATE/PREDICT)</td></tr>
+            <tr><td><code>comparison_report</code></td><td>geração do .md · seção de latência (com e sem JSON)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="callout">
+        As chamadas reais às APIs (Gemini, BigQuery) <strong>não</strong> entram no CI —
+        exigiriam credenciais e não pegariam regressões de lógica. O CI cobre o que é
+        rápido, estável e barato: <code>make test</code>.
       </p>
     </section>
   </main>
